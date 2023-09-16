@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Add custom styles for a modern, professional look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: rgb(247, 31, 67);
+        }
+
+        .description {
+            font-size: 20px;
+            margin-bottom: 40px;
+            /* color: #555; */
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: lightcoral;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(245, 72, 101);
+        }
+
+        /* Add a styled container for an interactive feature */
+        .feature-container {
+            background-color: rgb(238, 182, 182);
+            padding: 40px;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+            margin-top: 40px;
+        }
+
+        /* Add styles for the interactive element */
+        .interactive-element {
+            font-size: 24px;
+            color: rgb(247, 31, 67);
+            margin-bottom: 20px;
+        }
+
+        #right{
+            position: absolute;
+            top: 15px;
+            right: 5px; 
+        }
+ 
+    </style>
+      <!-- Add custom JavaScript for interactivity  -->
+     <script>
+        function showMessage() {
+            alert('Hey, Have a good day!');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           LET YOUR DREAMS BLOSSOM
+        </header>
+        <p class="description">
+            Every flower is a soul blossoming in nature
+        </p>
+        <a href="#" class="cta-button">Get Started</a>
+    </div>
+
+    <!-- Interactive Feature Section -->
+    <div class="feature-container">
+        <h2 class="interactive-element">Discover Our Interactive Feature</h2>
+        <p class="interactive-element">
+            Click the button below to see the magic happen!
+        </p>
+        <button class="cta-button" onclick="showMessage()">Show Me!</button>
+        <img src="download.jpeg" id="right">
+        
+    </div>
+</body>
+</html>
